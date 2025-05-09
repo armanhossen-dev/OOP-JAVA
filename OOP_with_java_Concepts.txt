@@ -1,0 +1,85 @@
+🟡 OOP with Java — Basic Concepts
+
+Main OOP concepts:
+- Object
+- Class
+- Methods
+- Instance Variables
+
+✅ Object
+An object is a real-world entity with attributes (properties) and behavior (actions) that is created from a class.
+
+Think of an object as:
+    Real-world examples: pen, car, person, tree, fish
+    Attributes (properties): color, material, abilities
+    Behavior (methods): what it can do — e.g., a pen can write, a car can drive, a person can walk
+
+Example: Car as an object
+    Attributes → car’s name, color, engine type, fuel capacity
+    Behavior → car’s functionalities, like start(), stop(), accelerate()
+
+Example: House as an object
+    Properties → number of rooms, material, number of doors/windows
+    Behavior → provides shelter, protects from heat, cold, rain
+
+
+✅ Methods
+A method is a function defined inside a class that describes the behavior of an object.
+It represents an action or task the object can perform.
+
+Also known as:
+    Functions, Member functions , Operations, Behaviors, Procedures
+
+
+
+✅ Instance Variable
+An instance variable is a non-static variable declared inside a class but outside any method.
+It holds the state or properties of an object; each object has its own copy.
+
+Also known as:
+Fields, Properties, Data members, Member variables
+
+Example (Car’s instance variables):
+color, number of tires, engine type (fuel engine, battery engine)
+
+
+
+✅ Class
+A class in OOP is a template or blueprint used to create objects.
+It defines the properties (variables) and behavior (methods) that its objects will have.
+
+In short: Class → defines | Object → is created from the class
+
+
+✅ Explanation:
+Class name: Account
+
+Attributes / Instance Variables:
+    name → the account holder’s name
+    accountNumber → unique number for the account
+    otherDetails → any additional details (like address, phone)
+    depositAmount → current balance or deposited amount
+
+Behaviors / Methods:
+    withdraw() → reduces money from the account
+    deposit() → adds money to the account
+    displayInfo() → shows the account’s details
+
+
+//C++ example:   
+class Account {
+    // Attributes / Instance Variables
+    string name;
+    string accountNumber;
+    string otherDetails;
+    double depositAmount;
+
+public:
+    // Constructor (optional)
+    Account();
+
+    // Behaviors / Methods
+    void withdraw();       // withdraw money
+    void deposit();        // deposit money
+    void displayInfo();    // display account information
+};
