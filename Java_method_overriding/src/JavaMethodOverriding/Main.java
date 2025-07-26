@@ -15,6 +15,9 @@ public class Main {
 		d1.speak();
 		c1.speak();
 		
+		//Bark Bark
+		//Meow Meow!
+		
 		 
 	}
 }
