@@ -25,18 +25,25 @@ public class main {
 //		
 //		System.out.println();
 		
-//		c2 = c1; this works but we will create copy method
+//		c2 = c1; this works but it makes those two class objects address same so their attributes are now same,
+		// we want to make 2 different class address but same attributs value, to copy value or date not making them same address
 		
+				
+		//Before Copy their address are not same, value are also different
+		System.out.println("Before Copy: Address are different also Value are different");
+		System.out.print(c1 + " "); 
+		c1.displayInfo();  
 		
-		c2.copy(c1);
-		System.out.println(c1); // 2ti memory address alada hobe but value same hobe attributes er
-		System.out.println(c2);
+		System.out.print(c2 + " ");
+		c2.displayInfo();
 		
 		System.out.println();
-		
-		System.out.println(c1); // 2ti memory address alada hobe but value same hobe attributes er
-		System.out.println(c2);
-		
+				
+		c2.copy(c1);
+		System.out.println("After Copy: Address are different but Value are same");
+		// there memory address is still different but attributes  value same
+		System.out.print(c1 + " "); 	c1.displayInfo();  
+		System.out.print(c2 + " ");		c2.displayInfo();
 				
 
 	}
